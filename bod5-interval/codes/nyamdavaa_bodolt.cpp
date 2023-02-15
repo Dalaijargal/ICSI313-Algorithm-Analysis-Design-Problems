@@ -27,14 +27,14 @@ int main () {
         int l = 0, r = i - 1 ; 
         while (l < r) {
             int m = (l + r) / 2 ;
-            if (intervals[i].first.second <= st) {
+            if (intervals[i].first.second < st) {
                 l = m ; 
             } else {
                 r = m - 1 ; 
             }
         }
 
-        if (intervals[l].second <= st) {
+        if (intervals[l].second < st) {
             dp[i] = max(dp[i-1], dp[l] + intervals[i].second) ; 
         } else {
             dp[i] = max(dp[i-1], intervals[i].second) ; 
