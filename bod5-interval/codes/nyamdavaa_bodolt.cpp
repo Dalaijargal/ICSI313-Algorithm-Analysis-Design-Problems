@@ -13,7 +13,7 @@ int main () {
     pair<pair<int,int>, int> intervals[n] ; 
     int dp[n] ;
     memset(dp, 0, sizeof dp) ; 
-    for (int i = 0 ; i < n ; i ++) {
+    for (int i = 0 ; i < n ; i ++) {    
         cin >> intervals[i].first.first >> intervals[i].first.second >> intervals[i].second ; 
     }
 
@@ -25,8 +25,8 @@ int main () {
         // l ba r ni haih range-iin zuun ba baruun hyzgaar 
         int l = 0, r = i - 1 ; 
         while (l < r) {
-            int m = (l + r) / 2 ;
-            if (intervals[i].first.second < st) {
+            int m = (l + r + 1) / 2 ;
+            if (intervals[m].first.second < st) {
                 l = m ; 
             } else {
                 r = m - 1 ; 
