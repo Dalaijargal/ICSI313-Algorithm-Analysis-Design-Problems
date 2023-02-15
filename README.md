@@ -28,3 +28,6 @@
 
 ### Testing 
 - VS Code-ийн `Competitive Programming Helper (cph)` extension ашиглах
+- Linux terminal эсвэл windows дээр bash terminal ашиглан < > оператороор оролт гаралтаа файлаас хийж болно. Жишээ нь: 
+    ./main<test.txt >out.txt гэвэл test.txt -г оролтонд нь оруулаад гаралтыг нь out.txt-д бичнэ. 
+    Дараа нь diff -q out.txt test_out.txt гэж харьцуулж болно
