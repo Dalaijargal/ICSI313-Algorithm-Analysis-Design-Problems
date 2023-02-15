@@ -27,4 +27,10 @@
 - Бодлогын өгүүлбэр оруулах (.tex файл байх)
 
 ### Testing 
-- VS Code-ийн `Competitive Programming Helper (cph)` extension ашиглах
+
+#### `Competitive Programming Helper (cph)` extension ашиглах
+- VS code extensions хэсэгт орох 
+- Competitive Programming Helper (cph) нэрээр хайх
+- Бодлогын файл нээн CTRL+ALT+B shortcut-аар ажиллуулах
+- input хэсэгт оролт нэмэх 
+- expected output хэсэгт гарах ёстой үр дүнг нэмэх
