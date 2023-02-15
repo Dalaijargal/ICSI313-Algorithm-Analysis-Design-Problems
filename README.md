@@ -19,3 +19,12 @@
 ### Install C++ 
 - sudo apt update 
 - sudo snap install build-essential 
+
+## Хичээлтэй холбогдох мэдээллүүд
+
+### Bonus points 
+- Тест нэмэх 
+- Бодлогын өгүүлбэр оруулах (.tex файл байх)
+
+### Testing 
+- VS Code-ийн `Competitive Programming Helper (cph)` extension ашиглах
