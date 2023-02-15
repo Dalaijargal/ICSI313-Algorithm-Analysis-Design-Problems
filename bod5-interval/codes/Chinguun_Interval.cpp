@@ -2,7 +2,7 @@
 using namespace std;
 
 int n;
-long long dp[10000 + 5], w[10000 + 5];
+long long dp[1000000 + 5], w[1000000 + 5];
 vector <pair <pair <int, int>, long long>> v;
 
 int dp_o(int i, vector <pair <pair <int, int>, long long>> v) {
