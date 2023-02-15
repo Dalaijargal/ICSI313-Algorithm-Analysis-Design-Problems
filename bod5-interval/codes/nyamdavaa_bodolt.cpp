@@ -14,9 +14,8 @@ int main () {
     int dp[n] ;
     memset(dp, 0, sizeof dp) ; 
     for (int i = 0 ; i < n ; i ++) {
-        cin >> intervals[i].first.first >> intervals[i].first.second ; 
+        cin >> intervals[i].first.first >> intervals[i].first.second >> intervals[i].second ; 
     }
-    for (int i = 0 ; i < n ; i ++) cin >> intervals[i].second ; 
 
     sort(intervals, intervals+n, cmp) ;
     
