@@ -54,7 +54,7 @@ int main ( ) {
     }
     quicksort ( in , 1 , n ) ;
     for ( int i = 1 ; i <= n ; i ++ ) {
-        int r = find_r ( i , in [ i ] . first . second ) ;
+        int r = find_r ( i - 1 , in [ i ] . first . first ) ;
         w [ i ] = max ( w [ i - 1 ] , w [ r ] + in [ i ] . second ) ;
         if ( w [ r ] + in [ i ] . second > w [ i - 1 ] ) en [ i ] = in [ i ] . first . second ;
         else en [ i ] = en [ i - 1 ] ;
