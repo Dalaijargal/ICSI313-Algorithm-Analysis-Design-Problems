@@ -4,7 +4,7 @@
 
 ### Clone repo 
 - sudo apt install git 
-- git clone https://github.com/Nyamdavaa2k01Algorithm-Analysis-Design-Problems.git
+- git clone https://github.com/Nyamdavaa2k01/ICSI313-Algorithm-Analysis-Design-Problems.git
 - git config --global user.name username
 - git config --global user.email your_mail@gmail.com
 
