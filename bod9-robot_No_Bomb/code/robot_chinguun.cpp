@@ -3,9 +3,7 @@ using namespace std;
 
 int x[2] = {-1, 0};
 int y[2] = {0, 1};
-// we have one bomb that can break the wall
-// find the maxmimum gold that we can get
-// 0: empty, -1: wall, 1: gold
+
 int n;
 int gg[1005][1005][2];
 int dp(int usd, int i, int j, int n, vector <int> a[]){
