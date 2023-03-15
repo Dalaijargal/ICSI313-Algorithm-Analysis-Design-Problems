@@ -15,7 +15,7 @@ input: NxN array орж ирэх ба хад байвал тухайн нүдн�
 ```python
 for i in array:
 	for j in i:
-		if(dp[i][j]!=-1:
+		if(dp[i][j]!=-1):
 			DP[i][j]=max(DP[i+1][j],DP[i][j+1])+DP[i][j]
 		else:
 			DP[i][j]=-1
