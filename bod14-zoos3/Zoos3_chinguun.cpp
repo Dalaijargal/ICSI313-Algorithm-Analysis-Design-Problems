@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int dp[1004][1003];
+int dp[10004][1003];
 int n, m, price[1004], cost[1004];
 
 int doit(int rst, int ind){
