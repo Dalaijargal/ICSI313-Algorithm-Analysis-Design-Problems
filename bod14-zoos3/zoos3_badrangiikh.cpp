@@ -8,16 +8,16 @@ int main ( ) {
 
     cin >> n >> m ;
     for ( int i = 1 ; i <= m ; i ++ ) {
-        cin >> c [ i ] ;
-    }
-    for ( int i = 1 ; i <= m ; i ++ ) {
-        cin >> p [ i ] ;
+        cin >> c [ i ] >> p [ i ] ;
     }
     memset ( dp , 0 , sizeof ( dp ) ) ;
     for ( int i = 1 ; i <= n ; i ++ ) {
         for ( int j = 1 ; j <= m ; j ++ ) {
             if ( i >= c [ j ] ) {
                 dp [ i ] [ j ] = max ( dp [ i ] [ j - 1 ] , dp [ i - c [ j ] ] [ j - 1 ] + p [ j ] ) ; 
+            }
+            else {
+                dp [ i ] [ j ] = dp [ i ] [ j - 1 ] ;
             }
         }
     }
