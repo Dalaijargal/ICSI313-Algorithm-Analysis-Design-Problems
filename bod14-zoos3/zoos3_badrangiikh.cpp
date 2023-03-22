@@ -19,6 +19,9 @@ int main ( ) {
             if ( i >= c [ j ] ) {
                 dp [ i ] [ j ] = max ( dp [ i ] [ j - 1 ] , dp [ i - c [ j ] ] [ j - 1 ] + p [ j ] ) ; 
             }
+            else {
+                dp [ i ] [ j ] = dp [ i ] [ j - 1 ] ;
+            }
         }
     }
     cout << dp [ n ] [ m ] ;
