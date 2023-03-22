@@ -8,10 +8,7 @@ int main ( ) {
 
     cin >> n >> m ;
     for ( int i = 1 ; i <= m ; i ++ ) {
-        cin >> c [ i ] ;
-    }
-    for ( int i = 1 ; i <= m ; i ++ ) {
-        cin >> p [ i ] ;
+        cin >> c [ i ] >> p [ i ] ;
     }
     memset ( dp , 0 , sizeof ( dp ) ) ;
     for ( int i = 1 ; i <= n ; i ++ ) {
