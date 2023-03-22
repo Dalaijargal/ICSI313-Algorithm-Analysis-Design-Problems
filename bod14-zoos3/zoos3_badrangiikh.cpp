@@ -14,7 +14,7 @@ int main ( ) {
     for ( int i = 1 ; i <= n ; i ++ ) {
         for ( int j = 1 ; j <= m ; j ++ ) {
             if ( i >= c [ j ] ) {
-                dp [ i ] [ j ] = max ( dp [ i ] [ j - 1 ] , dp [ i - c [ j ] ] [ j - 1 ] + p [ j ] ) ; 
+                dp [ i ] [ j ] = max ( dp [ i ] [ j - 1 ] , dp [ i - c [ j ] ] [ j ] + p [ j ] ) ; 
             }
             else {
                 dp [ i ] [ j ] = dp [ i ] [ j - 1 ] ;
