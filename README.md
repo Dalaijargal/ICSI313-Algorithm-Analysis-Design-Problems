@@ -34,3 +34,6 @@
 - Бодлогын файл нээн CTRL+ALT+B shortcut-аар ажиллуулах
 - input хэсэгт оролт нэмэх 
 - expected output хэсэгт гарах ёстой үр дүнг нэмэх
+
+#### `WSL` windows дээр linux subsystem ашиглах
+- cmd дээр 'wsl --install'
