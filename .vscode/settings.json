@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "utility": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp",
+        "algorithm": "cpp",
+        "limits": "cpp"
+    }
+}
