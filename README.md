@@ -35,5 +35,8 @@
 - input хэсэгт оролт нэмэх 
 - expected output хэсэгт гарах ёстой үр дүнг нэмэх
 
-#### `WSL` windows дээр linux subsystem ашиглах
-- cmd дээр 'wsl --install'
+#### `WSL` windows дээр linux subsystem ашиглах /Default-аар Ubuntu суух болно/
+- cmd дээр `wsl --install` /Ингэснээр wsl сууна/
+##### Нэмэлт 
+- cmd дээр `wsl` командыг ашигласнаар ubuntu асах болно.
+- өмнөх командыг гүйлгэсний дараагаар `code .` бичсэнээр VScode дээр шууд холбогдон ашиглах боломжтой
