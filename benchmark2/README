@@ -1,0 +1,13 @@
+These datasets are downloaded from the Pajek dataset [1], 10th DICMACS Implementation Challenge [2], and the UCINET software datasets [3]. We have remapped the node indexes (from 0 to n-1). 
+
+Network format:
+The format is similar to the adjacency list representation of graphs.
+There are n+1 lines, where n is the number of nodes.
+The first line contains the number of nodes. In the following n lines, each line includes a node and its neighbors: a node ID followed by a colon and the list of its neighbor nodes.
+
+
+[1] V. Batagelj, A. Mrvar, Pajek datasets (2006)
+[2] P. Sanders, C. Schulz, D. Wagner, Benchmarking for graph clustering and partition-
+ing, Encyclopedia of social network analysis and mining. Springer.
+[3] S. P. Borgatti, M. G. Everett, L. C. Freeman, Ucinet for windows: Software for social
+network analysis, Harvard, MA: analytic technologies 6 (2002) 12–15.

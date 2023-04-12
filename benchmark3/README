@@ -1,0 +1,11 @@
+They are downloaded from Stanford Network Analysis Platform [1]. We converted directed networks to be undirected, remapped the node indexes (from 0 to n-1), and formatted the networks. 
+
+Network format:
+The format is similar to the adjacency list representation of graphs.
+There are n+1 lines, where n is the number of nodes.
+The first line contains the number of nodes. In the following n lines, each line includes a node and its neighbors: a node ID followed by a colon and the list of its neighbor nodes' ID.
+
+
+[1] J. Leskovec, R. Sosič, Snap: A general-purpose network analysis and graph-mining library, ACM Transactions on Intelligent Systems and Technology (TIST) 8 (1)
+(2016) 1–20.
+
