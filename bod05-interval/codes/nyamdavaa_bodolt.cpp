@@ -10,33 +10,33 @@ bool cmp (pair<pii, int> p1, pair<pii, int> p2) {
 
 int main () {
     int n ; cin >> n ; 
-    pair<pair<int,int>, int> intervals[n] ; 
+    pair<pair<int,int>, int> a[n] ; 
     int dp[n] ;
     memset(dp, 0, sizeof dp) ; 
     for (int i = 0 ; i < n ; i ++) {    
-        cin >> intervals[i].first.first >> intervals[i].first.second >> intervals[i].second ; 
+        cin >> a[i].first.first >> a[i].first.second >> a[i].second ; 
     }
 
-    sort(intervals, intervals+n, cmp) ;
+    sort(a, a+n, cmp) ;
     
-    dp[0] = intervals[0].second ; 
+    dp[0] = a[0].second ; 
     for (int i = 1 ; i < n ; i ++) { 
-        int st = intervals[i].first.first ; 
+        int st = a[i].first.first ; 
         // l ba r ni haih range-iin zuun ba baruun hyzgaar 
         int l = 0, r = i - 1 ; 
         while (l < r) {
             int m = (l + r + 1) / 2 ;
-            if (intervals[m].first.second < st) {
+            if (a[m].first.second < st) {
                 l = m ; 
             } else {
                 r = m - 1 ; 
             }
         }
 
-        if (intervals[l].second < st) {
-            dp[i] = max(dp[i-1], dp[l] + intervals[i].second) ; 
+        if (a[l].second < st) {
+            dp[i] = max(dp[i-1], dp[l] + a[i].second) ; 
         } else {
-            dp[i] = max(dp[i-1], intervals[i].second) ; 
+            dp[i] = max(dp[i-1], a[i].second) ; 
         }
     }
     cout << dp[n-1] << "\n" ; 
