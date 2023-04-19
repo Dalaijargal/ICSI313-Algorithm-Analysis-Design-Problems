@@ -49,23 +49,23 @@ def draw_xy_chart(x_data, y_data, max_x, max_y) :
 
     # Add axis labels and title
     plt.plot(x_data, y_data)
-    plt.legend()
+    # plt.legend()
     plt.xlabel('K values')
     plt.ylabel('Time spent')
     plt.title('K and Time relation')
 
-    plt.ylim(0,max_x)
-    plt.xlim(0,max_y)
-    plt.xticks(x_data, x_data)
-    plt.yticks(y_data, y_data)  
+    # plt.ylim(0,max_x)
+    # plt.xlim(0,max_y)
+    # plt.xticks(x_data, x_data)
+    # plt.yticks()  
     
-    plt.show()
-    plt.savefig('xy_chart.png')
+    # plt.show()
+    plt.savefig('das03-CC-BC/3-Approximate-Closeness/xy_chart.png')
 
 if __name__ == '__main__':
     fin = open('benchmark1/netscience.txt', 'r') 
     G, n = read_graph(fin) 
-    draw_graphs(G, n) 
+    # draw_graphs(G, n) 
     
     k_list = []
     time_list = []
