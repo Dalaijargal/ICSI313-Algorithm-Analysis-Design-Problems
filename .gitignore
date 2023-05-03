@@ -1,2 +1,8 @@
 **/.cph
 .venv
+
+**/*.bin
+**/*.out
+**/*.o
+.DS_Store
+**/*.dSYM
