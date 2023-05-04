@@ -6,6 +6,7 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
     int n;
+
     cin >> n;
     vector<vector<int>> a(n);
     vector<vector<int>> dp(n);
@@ -28,14 +29,19 @@ int main() {
     //RELATION
     for (int i = 1; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            vector<int> tmpList;
-            if(j - 1 >= 0)
-                tmpList.push_back(dp[i - 1][j - 1]);
-            if(j + 1 < n)
-                tmpList.push_back(dp[i - 1][j + 1]);
-            tmpList.push_back(dp[i - 1][j]);
+            int left = __INT_MAX__;
+            int mid = __INT_MAX__;
+            int right = __INT_MAX__;
 
-            dp[i][j] = *min_element(tmpList.begin(), tmpList.end()) + a[i][j];
+            if(j - 1 >= 0)
+                left = dp[i - 1][j - 1];
+
+            if(j + 1 < n)
+                right = dp[i - 1][j + 1];
+       
+            mid = dp[i - 1][j];
+
+            dp[i][j] = min(mid, min(left, right)) + a[i][j];
         }
     }
 
