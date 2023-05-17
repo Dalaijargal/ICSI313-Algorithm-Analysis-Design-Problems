@@ -26,7 +26,7 @@ int main () {
             if (dp[i][1] != -1) {
                 int secondPlayerScore = a[i] + a[i-1] + a[i-2] ; 
                 int firstPlayerScore = a[i-3] + a[i-4] ; 
-                if (secondPlayerScore < 21 && secondPlayerScore > firstPlayerScore) {
+                if (secondPlayerScore <= 21 && secondPlayerScore > firstPlayerScore) {
                     dp[i][1] ++ ; 
                 }
             }            
