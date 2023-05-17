@@ -9,11 +9,11 @@ int n, ans;
 
 int go(int n){
     if(n == 0) return 0;
-    if(dp[n] != -1) return dp[n];
     if(n <= 3) {
-        dp[n] = INT_MIN;
-        return dp[n];
+        return INT_MIN;
     }
+    
+    if(dp[n] != -1) return dp[n];
 
     dp[n] = max(go(n - 4) + (a[n] + a[n - 1] > a[n - 2] + a[n - 3] && a[n] + a[n - 1] <= 21), 
     go(n - 5) + (a[n] + a[n - 1] + a[n - 2] > a[n - 3] + a[n - 4] && a[n] + a[n - 1] + a[n - 2] <= 21));
